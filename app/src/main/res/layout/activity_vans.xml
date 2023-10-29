@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cut_card_background"
+    tools:context=".VansActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/TImage"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:background="@drawable/inputs"
+                android:scaleType="centerCrop"
+                android:src="@drawable/van">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <ScrollView
+                android:id="@+id/Rlayout"
+                android:layout_below="@id/TImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Phne_Image"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/Vanphoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/inputs"
+                        android:saveEnabled="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/plus">
+                    </ImageView>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+
+
+
+
+            <EditText
+                android:id="@+id/Vanmodel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Rlayout"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/phone"
+                android:hint="Enter Van Model No"
+                android:padding="10dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/VanName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Vanmodel"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/phone"
+                android:hint="Enter Van Name"
+                android:padding="10dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/Vannumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/VanName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/phone"
+                android:hint="Enter Van Registration No"
+                android:padding="10dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/VanOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Vannumber"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Van Owner Name"
+                android:padding="10dp"
+                android:drawableStart="@drawable/phone"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/VanFirstOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/VanOwner"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Van First Owner Name"
+                android:padding="10dp"
+                android:drawableStart="@drawable/phone"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+
+            <EditText
+                android:id="@+id/VanOwnerIdCard"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/VanFirstOwner"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Van Owner Id Card "
+                android:padding="10dp"
+                android:drawableStart="@drawable/phone"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/VanSaveButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/VanOwnerIdCard"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/purple_700"
+                android:drawableStart="@drawable/phone"
+                android:text="Save Van Information"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintVertical_bias="0.082"
+                tools:layout_editor_absoluteX="16dp">
+            </Button>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey"
+    tools:context=".DesiredUserProfileActivity">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/user_page_toolbar">
+    </include>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY">
+
+    </ImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/DesiredUserProfile_Image"
+        android:layout_width="232dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="95dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        tools:ignore="MissingConstraints">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/DesiredUserName"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DesiredUserProfile_Image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="78dp"
+        android:layout_marginRight="22dp"
+        android:drawableStart="@drawable/edit_profile"
+        android:text="Name"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/DesiredUsermail"
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DesiredUserName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="23dp"
+        android:drawableStart="@drawable/email"
+        android:drawableTint="@color/black"
+        android:text="Email"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/DesiredUserNIC"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DesiredUsermail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="29dp"
+        android:drawableStart="@drawable/edit_status"
+        android:drawableTint="@color/black"
+        android:text="Cnic"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <Button
+        android:id="@+id/DesiredSaveUserProfileButton"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/DesiredUserNIC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/black"
+        android:text="Exit"
+        android:textAlignment="center"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.082"
+        tools:layout_editor_absoluteX="16dp">
+    </Button>
+
+
+
+</RelativeLayout>

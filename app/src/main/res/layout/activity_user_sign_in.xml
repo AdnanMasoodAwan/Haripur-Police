@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".UserSignInActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/UserSignInButton"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/UserSignInPassword"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/purple_700"
+                android:text="Sign In"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintVertical_bias="0.082"
+                tools:layout_editor_absoluteX="16dp">
+            </Button>
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="205dp"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginTop="69dp"
+                android:layout_marginRight="4dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/logo"></ImageView>
+
+
+
+            <EditText
+                android:id="@+id/UserSignInEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter user Email"
+                android:padding="5dp"
+                android:drawableStart="@drawable/email"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/UserSignInPassword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/UserSignInEmail"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter user password"
+                android:padding="5dp"
+                android:drawableStart="@drawable/password"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+            <TextView
+                android:id="@+id/DonthaveAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/UserSignInButton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="-34dp"
+                android:text="Dont have Account? create one"
+                android:textSize="21dp"
+                android:textStyle="bold">
+            </TextView>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

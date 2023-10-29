@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cut_card_background"
+    tools:context=".BusActivity">
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/BuImage"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/inputs"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bus">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <ScrollView
+                android:id="@+id/Rlayout"
+                android:layout_below="@id/BuImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Phne_Image"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/Busphoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/inputs"
+                        android:saveEnabled="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/plus"></ImageView>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+
+
+
+
+            <EditText
+                android:id="@+id/Busmodel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Rlayout"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/phone"
+                android:hint="Enter Bus Model No"
+                android:padding="10dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/BusName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Busmodel"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/phone"
+                android:hint="Enter Bus Name"
+                android:padding="10dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/Busnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/BusName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/phone"
+                android:hint="Enter Bus Registration No"
+                android:padding="10dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/BusOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Busnumber"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Bus Owner Name"
+                android:padding="10dp"
+                android:drawableStart="@drawable/phone"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/BusFirstOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/BusOwner"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Bus First Owner Name"
+                android:padding="10dp"
+                android:drawableStart="@drawable/phone"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+
+            <EditText
+                android:id="@+id/BusOwnerIdCard"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/BusFirstOwner"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Bus Owner Id Card "
+                android:padding="10dp"
+                android:drawableStart="@drawable/phone"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/BusSaveButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/BusOwnerIdCard"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/purple_700"
+                android:drawableStart="@drawable/phone"
+                android:text="Save Bus Information"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintVertical_bias="0.082"
+                tools:layout_editor_absoluteX="16dp">
+            </Button>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

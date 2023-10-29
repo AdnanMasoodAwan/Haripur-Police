@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserPickupActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/user_page_toolbar">
+    </include>
+
+
+    <RelativeLayout
+        android:id="@+id/RlayCar"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/Search_Pickup_Info"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="Search Pickup"
+            android:padding="15dp"
+            android:soundEffectsEnabled="true"
+            android:textColorHint="@color/black">
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/SearchIconPickup"
+            android:layout_width="68dp"
+            android:layout_height="59dp"
+            android:layout_alignEnd="@+id/Search_Pickup_Info"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/searchh">
+        </ImageButton>
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/PickupInfoList"
+        android:layout_width="385dp"
+        android:layout_height="550dp"
+        android:background="@color/LightGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

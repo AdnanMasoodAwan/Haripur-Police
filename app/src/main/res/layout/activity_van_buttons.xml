@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".VanButtonsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/UserButtonVan"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/AdminButtonVan"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/purple_700"
+                android:text="Show Existing Record"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintVertical_bias="0.082"
+                tools:layout_editor_absoluteX="16dp">
+            </Button>
+
+            <Button
+                android:id="@+id/AdminButtonVan"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/imageViewVan"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="14dp"
+                android:backgroundTint="@color/purple_700"
+                android:text="Add New Record"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="6dp">
+            </Button>
+
+            <ImageView
+                android:id="@+id/imageViewVan"
+                android:layout_width="205dp"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="80dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/van">
+            </ImageView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

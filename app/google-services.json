@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "916738458667",
+    "firebase_url": "https://haripur-police-default-rtdb.firebaseio.com",
+    "project_id": "haripur-police",
+    "storage_bucket": "haripur-police.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916738458667:android:eff3929b7c634ade0e166e",
+        "android_client_info": {
+          "package_name": "com.example.haripurpolice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916738458667-krdnoeb0habk0bvf4eimrd24ph2f69l7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.haripurpolice",
+            "certificate_hash": "4f931c1aeb86c4645e0f4e4370251c8a8b919670"
+          }
+        },
+        {
+          "client_id": "916738458667-nvn8p7r2bl2ha8tv29ptis583k1fc9sj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyfbBHnuXzKIp50BVe3YPmOZPXz6zncB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916738458667-nvn8p7r2bl2ha8tv29ptis583k1fc9sj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

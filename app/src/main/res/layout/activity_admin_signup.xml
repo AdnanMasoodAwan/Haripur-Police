@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".AdminSignupActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/SignupButton"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/AdminPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/purple_700"
+                android:text="Sign Up"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintVertical_bias="0.082"
+                tools:layout_editor_absoluteX="16dp">
+            </Button>
+
+            <Button
+                android:id="@+id/PhoneSignUpButton"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/purple_700"
+                android:text="SignUp With Phone"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintVertical_bias="0.082"
+                tools:layout_editor_absoluteX="16dp">
+            </Button>
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/AdimageView"
+                android:layout_width="205dp"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginTop="69dp"
+                android:layout_marginRight="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_image">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <EditText
+                android:id="@+id/AdminName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AdimageView"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/edit_profile"
+                android:hint="Enter your Name"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/AdminEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AdminName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/email"
+                android:hint="Enter your Email"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/AdminPassword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AdminEmail"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter your password"
+                android:padding="5dp"
+                android:drawableStart="@drawable/password"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/AdminCNIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AdminPassword"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/edit_status"
+                android:hint="Enter your CNIC"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/AdminPhoneNo"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AdminCNIC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/phone"
+                android:hint="Enter your Phone "
+                android:padding="10dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <TextView
+                android:id="@+id/AdminAlreadyhaveAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SignupButton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="-34dp"
+                android:text="Already have Account? Login"
+                android:textColor="@color/white"
+                android:textSize="21dp"
+                android:textStyle="bold">
+            </TextView>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_marginLeft="29dp"
+                android:layout_below="@id/AdminAlreadyhaveAccount"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/User"
+                    android:text="User"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:buttonTint="@color/white"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/Admin"
+                    android:text="Admin"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:buttonTint="@color/white"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </RadioButton>
+
+            </RadioGroup>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

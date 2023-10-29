@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cut_card_background"
+    tools:context=".HabitualCriminalActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/C_Image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:background="@drawable/inputs"
+                android:src="@drawable/prisoner">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <ScrollView
+                android:id="@+id/Rlayout"
+                android:layout_below="@id/C_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_below="@id/Phne_Image"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/CriminalImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/inputs"
+                        android:saveEnabled="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile_image"
+                        app:civ_border_color="@color/black"
+                        app:civ_border_width="5dp">
+
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                </RelativeLayout>
+
+            </ScrollView>
+            <EditText
+                android:id="@+id/CriminalNIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Rlayout"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/edit_profile"
+                android:hint="Enter Criminal NIC No"
+                android:padding="10dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/CriminalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CriminalNIC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/edit_profile"
+                android:hint="Enter Criminal Name"
+                android:padding="10dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/CriminalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CriminalName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/edit_status"
+                android:hint="Enter Criminal Address"
+                android:padding="10dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+            <Button
+                android:id="@+id/CriminalSaveButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/CriminalAddress"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/purple_700"
+                android:drawableStart="@drawable/phone"
+                android:text="Save Information"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintVertical_bias="0.082"
+                tools:layout_editor_absoluteX="16dp">
+            </Button>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cut_card_background"
+    tools:context=".LaptopActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Phne_Image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/inputs"
+                android:scaleType="centerCrop"
+                android:src="@drawable/laptop">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <ScrollView
+                android:id="@+id/Rlayout"
+                android:layout_below="@id/Phne_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_below="@id/Phne_Image"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/Laptopphoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/inputs"
+                        android:saveEnabled="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/plus">
+                    </ImageView>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+
+
+
+
+            <EditText
+                android:id="@+id/LaptopCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Rlayout"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/phone"
+                android:hint="Enter Laptop Company"
+                android:padding="10dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/LaptopRam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LaptopCompany"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/phone"
+                android:hint="Enter Laptop RAM"
+                android:padding="10dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/LaptopHarddisk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LaptopRam"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/phone"
+                android:hint="Enter Laptop Harddisk"
+                android:padding="10dp"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/LaptopProcessor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LaptopHarddisk"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Laptop Processor"
+                android:padding="10dp"
+                android:drawableStart="@drawable/phone"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+
+
+
+            <EditText
+                android:id="@+id/LaptopModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LaptopProcessor"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Laptop Model No"
+                android:padding="10dp"
+                android:drawableStart="@drawable/phone"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/LaptopGeneration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LaptopModel"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Laptop Generation"
+                android:padding="10dp"
+                android:drawableStart="@drawable/phone"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <EditText
+                android:id="@+id/LaptopOwnerNic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LaptopGeneration"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/inputs"
+                android:backgroundTint="@color/white"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Enter Laptop Owner NIC"
+                android:padding="10dp"
+                android:drawableStart="@drawable/phone"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/LapotopSaveButton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/LaptopOwnerNic"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/purple_700"
+                android:drawableStart="@drawable/phone"
+                android:text="Save Information"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintVertical_bias="0.082"
+                tools:layout_editor_absoluteX="16dp">
+            </Button>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

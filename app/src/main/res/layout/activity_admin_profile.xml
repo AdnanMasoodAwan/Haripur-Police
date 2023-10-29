@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AdminProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/Ad"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/AdminName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="155dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ui"
+        app:civ_border_width="3dp"
+        tools:ignore="MissingConstraints">
+    </ImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Admin_Profile_Image"
+        android:layout_width="232dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_image"
+        app:civ_border_width="2dp"
+        tools:ignore="MissingConstraints">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/AdminName"
+        android:background="@color/LightGrey"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Admin_Profile_Image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="20dp"
+        android:drawableTint="@color/black"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/L1"
+        android:background="@color/LightGrey"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/Ad"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/I1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/phone"
+            app:civ_border_width="3dp"
+            tools:ignore="MissingConstraints">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/AdminPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_below="@+id/Ad"
+            android:text="Phone"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/L2"
+        android:background="@color/LightGrey"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/L1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/I2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/email"
+            app:civ_border_width="3dp"
+            tools:ignore="MissingConstraints">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/AdminEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10sp"
+            android:layout_below="@+id/Ad"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/L3"
+        android:background="@color/LightGrey"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/L2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/I3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/edit_status"
+            app:civ_border_width="3dp"
+            tools:ignore="MissingConstraints">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/AdminNIC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10sp"
+            android:layout_below="@+id/Ad"
+            android:text="CNIC"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/SaveAdminProfileButton"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/L3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="21dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="logout"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.082"
+        tools:layout_editor_absoluteX="16dp">
+    </Button>
+
+    </RelativeLayout>
+
+
